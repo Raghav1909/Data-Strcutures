@@ -68,9 +68,8 @@ void infix_prefix(char inf[], char prf[])
     {
         symb = inf[i];
         while (prcd(stack[top]) > isop(symb))
-        {
             prf[j++] = stack[top--];
-        }
+
         if (prcd(stack[top]) != isop(symb))
             stack[++top] = symb;
         else

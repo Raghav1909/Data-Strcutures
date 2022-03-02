@@ -18,7 +18,7 @@ void push()
 
     printf("Enter the items to be inserted: ");
     scanf("%s", item);
-    strcpy(item, s[++top]);
+    strcpy(s[++top], item);
 }
 
 void pop()
@@ -29,8 +29,8 @@ void pop()
         return;
     }
 
-    strcpy(s[top--], item_del);
-    printf("Item deleted = %d \n", item_del);
+    strcpy(item_del, s[top--]);
+    printf("Item deleted = %s\n", item_del);
 }
 
 void display()
@@ -43,7 +43,7 @@ void display()
 
     printf("Contents of stack: ");
     for (i = 0; i <= top; i++)
-        printf("%s ", s[i]);
+        printf("%s", s[i]);
     printf("\n");
 }
 
