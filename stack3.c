@@ -1,4 +1,4 @@
-// Write a C program to convert prefix expression to infix expression
+// Write a C program to convert infix expression to prefix expression
 
 #include <stdio.h>
 #include <stdlib.h>
