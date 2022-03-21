@@ -43,7 +43,7 @@ void display()
 
     printf("Contents of stack: ");
     for (i = 0; i <= top; i++)
-        printf("%s", s[i]);
+        printf("%s\t", s[i]);
     printf("\n");
 }
 
